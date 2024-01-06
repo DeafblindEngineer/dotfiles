@@ -1,6 +1,6 @@
 ### Mutt Configuration
 
-These are my dotfiles to configure Mutt for multiple IMAP email address.
+These are my dotfiles and configuration notes to configure Mutt for multiple IMAP email addresses.
 
 ### Initial Setup
 
