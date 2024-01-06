@@ -2,7 +2,7 @@
 
 These are my dotfiles and configuration notes to configure Mutt for multiple IMAP email addresses.
 
-### Initial Setup
+&num; Initial Mutt Configuration
 
 ```
 $ sudo apt install mutt
@@ -10,17 +10,22 @@ $ mkdir -p ~/.mutt/cache/headers
 $ mkdir ~/.mutt/cache/bodies
 $ touch ~/.mutt/certificates
 $ touch ~/.mutt/muttrc
-$ vim ~/.mutt/muttrc
 ```
 
-```
-$ vim ~/.mutt/imap01
-$ vim ~/.mutt/imap02
-$ vim ~/.mutt/imap03
-$ vim ~/.mutt/imap04
-```
+&num; Global Mutt Dotfile
 
-### Create GPG Key (if required)
+&nbsp;&nbsp;&nbsp;&nbsp;$ vim [~/.mutt/muttrc](https://github.com/DeafblindEngineer/dotfiles/blob/main/mutt/.muttrc)  
+
+
+&num; IMAP Specific Dotfiles
+
+&nbsp;&nbsp;&nbsp;&nbsp;$ vim [~/.mutt/imap01](https://github.com/DeafblindEngineer/dotfiles/blob/main/mutt/.imap01)  
+&nbsp;&nbsp;&nbsp;&nbsp;$ vim [~/.mutt/imap02](https://github.com/DeafblindEngineer/dotfiles/blob/main/mutt/imap02)  
+&nbsp;&nbsp;&nbsp;&nbsp;$ vim [~/.mutt/imap03](https://github.com/DeafblindEngineer/dotfiles/blob/main/mutt/imap03)  
+&nbsp;&nbsp;&nbsp;&nbsp;$ vim [~/.mutt/imap04](https://github.com/DeafblindEngineer/dotfiles/blob/main/mutt/imap04)  
+
+
+&num; Create GPG Key (if required)
 
 ```
 $ gpg --gen-key
@@ -35,7 +40,7 @@ $ gpg --gen-key
 
 **NOTE:** Repeat the above steps for imap02, imap03, and imap04
 
-### GPG Key Setup for ~/.mutt/imap01
+&num; GPG Key Setup for ~/.mutt/imap01
 
 Create a new text file in ~/.mutt directory called imap01_pwd:
 
