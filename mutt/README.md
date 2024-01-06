@@ -18,6 +18,21 @@ $ vim ~/.mutt/imap03
 $ vim ~/.mutt/imap04
 ```
 
+### Create GPG Key (if required)
+
+```
+$ gpg --gen-key
+```
+
+* Choose the key type (RSA)
+* Choose the Keysize (2048 bits)
+* Expiration date (0: no expiration)
+* User ID, type name (imap01)
+* Enter the email address to be associated with the private/public keypair (imap01@example.com)
+•	Type a passphrase to protect the private key
+
+**NOTE:** Repeat the above steps for imap02, imap03, and imap04
+
 ### GPG Key Setup for ~/.mutt/imap01
 
 Create a new text file in ~/.mutt directory called imap01_pwd:
@@ -45,3 +60,5 @@ Remove ~/.mutt/imap01_pwd, leaving only the GPG-encrypted version:
 ```
 $ rm ~/.mutt/imap01_pwd
 ```
+
+**NOTE:** Repeat the above steps for imap02, imap03, and imap04
