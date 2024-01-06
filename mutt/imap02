@@ -1,0 +1,13 @@
+set from = "imap02@example.com"
+set realname = "imap02"
+set imap_user = "imap02@example.com"
+set folder = "imaps://mail.example.com:993"
+set spoolfile = "+Inbox"
+set postponed="+Inbox/Drafts"
+set record="+Inbox/Sent"
+set copy=yes
+set trash="+Inbox/Trash"
+set smtp_url = "smtps://imap02@example.com@mail.example.com:465/"
+
+# Encrypted IMAP/SMTP passwords
+source "gpg -d ~/.mutt/imap02_pwd.gpg |"
