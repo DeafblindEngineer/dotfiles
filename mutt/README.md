@@ -17,3 +17,31 @@ $ vim ~/.mutt/imap02
 $ vim ~/.mutt/imap03
 $ vim ~/.mutt/imap04
 ```
+
+### GPG Key Setup for ~/.mutt/imap01
+
+Create a new text file in ~/.mutt directory called imap01_pwd:
+
+```
+$ mkdir ~/.mutt
+$ vim ~/.mutt/imap01_pwd
+```
+
+Put the IMAP/SMTP Passwords in the new Mutt configuration file that will be encrypted:
+
+```
+set imap_pass = "imap01password"
+set smtp_pass = "smtp01password"
+```
+
+Encrypt this file with gpg using the public key to create a ~/.mutt/imap01_pwd.gpg, which will be a GPG-encrypted version of the original file:
+
+```
+$ gpg -r imap01@example.com -e ~/.mutt/imap01_pwd
+```
+
+Remove ~/.mutt/imap01_pwd, leaving only the GPG-encrypted version:
+
+```
+$ rm ~/.mutt/imap01_pwd
+```
