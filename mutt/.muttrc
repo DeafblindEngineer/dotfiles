@@ -1,1 +1,27 @@
+folder-hook 'imap01@example.com' 'source ~/.mutt/imap01'
+folder-hook 'imap02@example.com' 'source ~/.mutt/imap02'
+folder-hook 'imap03@example.com' 'source ~/.mutt/imap03'
+folder-hook 'imap04@example.com' 'source ~/.mutt/imap04'
 
+source ~/.mutt/imap01 # switch to default account on startup
+
+macro index <f2> '<sync-mailbox><enter-command>source ~/.mutt/imap01<enter><change-folder>!<enter>'
+macro index <f3> '<sync-mailbox><enter-command>source ~/.mutt/imap02<enter><change-folder>!<enter>'
+macro index <f4> '<sync-mailbox><enter-command>source ~/.mutt/imap03<enter><change-folder>!<enter>'
+macro index <f5> '<sync-mailbox><enter-command>source ~/.mutt/imap04<enter><change-folder>!<enter>'
+
+set header_cache=~/.mutt/cache/headers
+set message_cachedir=~/.mutt/cache/bodies
+set certificate_file=~/.mutt/certificates
+
+set pager = "builtin"
+
+set move = no
+set imap_keepalive = 900
+set editor = "vim"
+
+push <show-version> # show mutt version at the start
+set charset = "utf-8"
+set send_charset = "utf-8"
+set sort_aux = last-date-received                           
+set sort = reverse-threads
