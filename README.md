@@ -4,6 +4,7 @@
 
 ### List of dotfiles
 
-* .bashrc
-* tmux.conf
-* .vimrc
+* [.mutt/muttrc](https://github.com/DeafblindEngineer/dotfiles/tree/main/mutt)
+* [.bashrc](https://github.com/DeafblindEngineer/dotfiles/blob/main/.bashrc)
+* [tmux.conf](https://github.com/DeafblindEngineer/dotfiles/blob/main/.tmux.conf)
+* [.vimrc](https://github.com/DeafblindEngineer/dotfiles/blob/main/.vimrc)
